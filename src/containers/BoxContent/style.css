@@ -1,0 +1,127 @@
+@import '../../styles/application/variables.css';
+
+.section-tech {
+  margin: 3em 0;
+}
+
+.section-tech__content {
+  height: 25px;
+  width: 35%;
+  display: flex;
+}
+
+.section-tech-item {
+  display: flex;
+  height: 36px;
+  width: 50%;
+}
+
+@media only screen and (min-width: 480px) {
+  .section-tech__content {
+    height: 36px;
+  }
+}
+
+.section-tech__title {
+  font-size: 1rem;
+  box-shadow: 0px 0px 21px 1px #CABEBE;
+  border-radius: 5px;
+  padding: .5em;
+  margin: .4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section-tech__title {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    width: 50%;
+  }
+}
+
+.content-box {
+  border-radius: 5px;
+  box-shadow: 0px 0px 21px 1px rgba(100,147,191,0.66);
+  padding: 1em;
+  margin: 1em;
+  transition: .4s;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-box {
+    margin: 0 0 2em 0;
+  }    
+}
+
+@media only screen and (min-width: 1024px) {
+  .content-box {
+    margin: 0 0 2em 0;
+  }
+}
+
+.content-box__header {
+  padding: 1em 1em 4em 1em;
+  font-size: .8rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  position: relative;
+}
+
+.content-box__image {
+  border: 10px solid rgba(32, 35, 42,0.4);
+  background: #E3EAF3;
+  width: 35%;
+  margin: auto;
+  padding: 1em 0;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .content-box__image {
+    padding: 1.5em 0;
+    top: 45%;
+  }
+}
+
+.content-box__title {
+  margin-top: 0;
+}
+
+.content-box__body {
+  padding: 6em 2em 2em 2em;
+  font-size: .8rem;
+  position: relative;
+}
+
+.content-box:hover {
+  transform: scale(1.03);
+}
+
+.content-box__button {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.botton-box {
+  background: #FFF;
+  border: 1px solid #CABEBE;
+  border-radius: 2px;
+  margin: .5em;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.botton-box:focus {
+  outline: none;
+}

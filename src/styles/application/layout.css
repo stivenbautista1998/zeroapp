@@ -1,0 +1,24 @@
+.wrapper {
+  margin: 0 auto;
+}
+
+.section {
+  margin: 3em 0;
+  padding: 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .large--one-third {
+    width:33.333%;
+  }
+}

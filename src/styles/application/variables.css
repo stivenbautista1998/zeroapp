@@ -1,0 +1,74 @@
+/* Colors */
+:root {
+  --white:                   #fff;
+  --gray-100:                #f8f9fa;
+  --gray-200:                #e9ecef;
+  --gray-300:                #dee2e6;
+  --gray-400:                #ced4da;
+  --gray-500:                #adb5bd;
+  --gray-600:                #6c757d;
+  --gray-700:                #495057;
+  --gray-800:                #343a40;
+  --gray-900:                #212529;
+  --black:                   #000;
+
+  /* // Typography */
+  --font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-serif:       Georgia, "Times New Roman", Times, serif;
+  --font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+  --font-family-base:        --font-family-sans-serif;
+  --font-family-theme:       "Roboto Slab";
+
+  /* --font-size-base:          10px ; // Assumes the browser default, typically `16px` */
+
+  --line-height-base:        1.5;
+
+  --font-weight-light:       300;
+  --font-weight-normal:      400;
+  --font-weight-strong:      500;
+  --font-weight-bold:        700;
+
+  --font-weight-base:        --font-weight-normal;
+
+  /* // Main Styles */
+  --body-bg:                 --white;
+  --text-color:              --gray-900;
+
+
+
+  /* // Media Queries and grid settings */
+  --screen-extra-small:                480px;
+  --screen-small:                      620px;
+  --screen-medium:                     768px;
+  --screen-large:                      1024px;
+  --screen-extra-large:                1280px;
+
+  --screen:                            "only screen";
+  --small:                             "only screen and (min-width: #{--screen-extra-small})";
+  --small:                             "only screen and (min-width: #{--screen-small})";
+  --medium:                            "only screen and (min-width: #{--screen-medium})";
+  --large-max:                         "only screen and (max-width: #{--screen-large - 1})";
+  --small-max:                         "only screen and (max-width: #{--screen-small - 1})";
+  --medium-max:                        "only screen and (max-width: #{--screen-medium - 1})";
+  --large:                             "only screen and (min-width: #{--screen-large})";
+  --extra-large:                       "only screen and (min-width: #{--screen-extra-large})";
+  --landscape:                         "only screen and (orientation: landscape)";
+  --portrait:                          "only screen and (orientation: portrait)";
+
+  --use-silent-classes:                false;
+  /* --gutter:                            --base-spacing-unit; */
+  --push:                              true;
+  --pull:                              false;
+
+  --breakpoints: (
+      'large' '(min-width: #{--screen-large})',
+      'medium' '(min-width: #{--screen-medium})',
+      'small' '(min-width: #{--screen-small})',
+      'extra-small' '(min-width: #{--screen-extra-small})'
+  );
+
+  --breakpoint-has-widths: ('small', 'medium', 'large');
+  --breakpoint-has-push:   ('small', 'medium', 'large');
+  --breakpoint-has-pull:   ('small', 'medium', 'large');
+
+}

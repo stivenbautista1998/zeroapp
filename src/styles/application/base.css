@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: var(--font-family-theme);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  text-align: left;
+  background-color: var(--body-bg);
+}
+
+.resizeable-both {
+  border: 1px solid var(--gray-400);
+  display: block;
+}
+  
