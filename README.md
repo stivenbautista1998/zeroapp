@@ -1,10 +1,10 @@
 # Project ZeroApp
-V 0.1.0
+V 0.1.0 <br>
 By Stiven Bautista
 
 ## Available Scripts
 
-Start the project with the command:
+Start the project with the next command:
 
 ### `npm start`
 
