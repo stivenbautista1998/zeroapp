@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class ListItems extends Component {
-  // static propTypes = {
-  //   items: PropTypes.object
-  // }
+  static propTypes = {
+    items: PropTypes.object
+  }
 
   constructor(props) {
     super(props);
@@ -41,8 +41,7 @@ class ListItems extends Component {
       const selected = item.name === isSelected;
       return (
         <li key={item.id} className="list__item">
-          {/* <Link onClick={this.handleClick} className={selected ? 'list__link list__link--selected' : 'list__link'} to={item.link}>{item.name}</Link> */}
-          <a onClick={this.handleClick} className={selected ? 'list__link list__link--selected' : 'list__link'} href={item.link}>{item.name}</a>
+          <Link onClick={this.handleClick} className={selected ? 'list__link list__link--selected' : 'list__link'} to={item.link}>{item.name}</Link>
         </li>
       );
     });

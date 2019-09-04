@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+// import { Helmet } from 'react-helmet';
+import PropTypes from 'prop-types';
 import TitleSection from './TitleSection';
 import ContentList from './ContentList';
 import './style.css';
@@ -7,14 +8,14 @@ import './style.css';
 const Webpack = ({
   width, height, iconTitle, fillOne, fillTwo, fillThree
 }) => {
-  // Webpack.propTypes = {
-  //   width: PropTypes.string,
-  //   height: PropTypes.string,
-  //   iconTitle: PropTypes.string,
-  //   fillOne: PropTypes.string,
-  //   fillTwo: PropTypes.string,
-  //   fillThree: PropTypes.string
-  // };
+  Webpack.propTypes = {
+    width: PropTypes.string,
+    height: PropTypes.string,
+    iconTitle: PropTypes.string,
+    fillOne: PropTypes.string,
+    fillTwo: PropTypes.string,
+    fillThree: PropTypes.string
+  };
 
   return (
     <svg className="icon icon-webpack" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 600 600" aria-labelledby={iconTitle}>
@@ -29,15 +30,15 @@ const Webpack = ({
 const Html = ({
   width, height, iconTitle, fill
 }) => {
-  // Html.propTypes = {
-  //   width: PropTypes.string,
-  //   height: PropTypes.string,
-  //   iconTitle: PropTypes.string,
-  //   fill: PropTypes.string
-  // };
+  Html.propTypes = {
+    width: PropTypes.string,
+    height: PropTypes.string,
+    iconTitle: PropTypes.string,
+    fill: PropTypes.string
+  };
 
   return (
-    <svg className="icon icon-html" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
+    <svg className="icon icon-html" xmlns="http:ww.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
       <title id={iconTitle}>html</title>
       <path fill={fill} d="M2 0h28l-2.547 28.751-11.484 3.249-11.419-3.251-2.551-28.749zM11.375 13l-0.309-3.624 13.412 0.004 0.307-3.496-17.568-0.004 0.931 10.68h12.168l-0.435 4.568-3.88 1.072-3.94-1.080-0.251-2.813h-3.479l0.44 5.561 7.229 1.933 7.172-1.924 0.992-10.876h-12.789z"></path>
     </svg>
@@ -47,15 +48,15 @@ const Html = ({
 const ReactIcon = ({
   width, height, iconTitle, fill
 }) => {
-  // ReactIcon.propTypes = {
-  //   width: PropTypes.string,
-  //   height: PropTypes.string,
-  //   iconTitle: PropTypes.string,
-  //   fill: PropTypes.string
-  // };
+  ReactIcon.propTypes = {
+    width: PropTypes.string,
+    height: PropTypes.string,
+    iconTitle: PropTypes.string,
+    fill: PropTypes.string
+  };
 
   return (
-    <svg className="icon icon-react" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
+    <svg className="icon icon-react" xmlns="http:ww.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
       <title id={iconTitle}>react</title>
       <path fill={fill} d="M18.852 16c0 1.575-1.277 2.852-2.852 2.852s-2.852-1.277-2.852-2.852c0-1.575 1.277-2.852 2.852-2.852s2.852 1.277 2.852 2.852z"></path>
       <path fill={fill} d="M8.011 21.673l-0.629-0.16c-4.691-1.185-7.381-3.197-7.381-5.519s2.691-4.333 7.381-5.519l0.629-0.159 0.177 0.624c0.545 1.86 1.163 3.443 1.899 4.957l-0.082-0.186 0.135 0.284-0.135 0.284c-0.656 1.329-1.275 2.912-1.761 4.551l-0.056 0.22-0.177 0.623zM7.089 11.933c-3.565 1.001-5.753 2.533-5.753 4.061 0 1.527 2.188 3.059 5.753 4.061 0.512-1.62 1.046-2.965 1.662-4.263l-0.086 0.202c-0.531-1.098-1.066-2.443-1.511-3.828l-0.065-0.234zM23.989 21.673l-0.177-0.625c-0.544-1.859-1.162-3.441-1.9-4.954l0.081 0.184-0.135-0.284 0.135-0.284c0.656-1.329 1.275-2.911 1.762-4.55l0.056-0.221 0.177-0.624 0.631 0.159c4.689 1.185 7.38 3.197 7.38 5.52s-2.691 4.333-7.38 5.519l-0.631 0.16zM23.335 15.995c0.64 1.385 1.169 2.747 1.576 4.061 3.567-1.003 5.753-2.535 5.753-4.061 0-1.528-2.188-3.059-5.753-4.061-0.511 1.619-1.045 2.963-1.662 4.262l0.086-0.2z"></path>
@@ -69,15 +70,15 @@ const ReactIcon = ({
 const Css = ({
   width, height, iconTitle, fill
 }) => {
-  // Css.propTypes = {
-  //   width: PropTypes.string,
-  //   height: PropTypes.string,
-  //   iconTitle: PropTypes.string,
-  //   fill: PropTypes.string
-  // };
+  Css.propTypes = {
+    width: PropTypes.string,
+    height: PropTypes.string,
+    iconTitle: PropTypes.string,
+    fill: PropTypes.string
+  };
 
   return (
-    <svg className="icon icon-css" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
+    <svg className="icon icon-css" xmlns="http:ww.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
       <title id={iconTitle}>css3</title>
       <path fill={fill} d="M2 0h28l-2.547 28.751-11.484 3.249-11.42-3.251-2.549-28.749zM24.787 5.884l-17.573-0.004 0.284 3.496 13.5 0.003-0.34 3.621h-8.853l0.32 3.431h8.243l-0.488 4.697-3.88 1.072-3.941-1.080-0.251-2.813h-3.48l0.387 5.14 7.287 2.271 7.164-2.040 1.623-17.792z"></path>
     </svg>
@@ -87,15 +88,15 @@ const Css = ({
 const Javascript = ({
   width, height, iconTitle, fill
 }) => {
-  // Javascript.propTypes = {
-  //   width: PropTypes.string,
-  //   height: PropTypes.string,
-  //   iconTitle: PropTypes.string,
-  //   fill: PropTypes.string
-  // };
+  Javascript.propTypes = {
+    width: PropTypes.string,
+    height: PropTypes.string,
+    iconTitle: PropTypes.string,
+    fill: PropTypes.string
+  };
 
   return (
-    <svg className="icon icon-javascript" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
+    <svg className="icon icon-javascript" xmlns="http:ww.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
       <title id={iconTitle}>javascript</title>
       <path fill={fill} d="M0 0h32v32h-32v-32zM29.379 24.368c-0.233-1.46-1.184-2.687-4.004-3.831-0.981-0.46-2.072-0.78-2.396-1.52-0.121-0.44-0.14-0.68-0.061-0.94 0.2-0.861 1.22-1.12 2.020-0.88 0.52 0.16 1 0.56 1.301 1.2 1.379-0.901 1.379-0.901 2.34-1.5-0.36-0.56-0.539-0.801-0.781-1.040-0.84-0.94-1.959-1.42-3.779-1.379l-0.94 0.119c-0.901 0.22-1.76 0.7-2.28 1.34-1.52 1.721-1.081 4.721 0.759 5.961 1.82 1.36 4.481 1.659 4.821 2.94 0.32 1.56-1.16 2.060-2.621 1.88-1.081-0.24-1.68-0.781-2.34-1.781l-2.44 1.401c0.28 0.64 0.6 0.919 1.080 1.479 2.32 2.341 8.12 2.221 9.161-1.339 0.039-0.12 0.32-0.94 0.099-2.2l0.061 0.089zM17.401 14.708h-2.997c0 2.584-0.012 5.152-0.012 7.74 0 1.643 0.084 3.151-0.184 3.615-0.44 0.919-1.573 0.801-2.088 0.64-0.528-0.261-0.796-0.621-1.107-1.14-0.084-0.14-0.147-0.261-0.169-0.261l-2.433 1.5c0.407 0.84 1 1.563 1.765 2.023 1.14 0.68 2.672 0.9 4.276 0.54 1.044-0.301 1.944-0.921 2.415-1.881 0.68-1.24 0.536-2.76 0.529-4.461 0.016-2.739 0-5.479 0-8.239l0.005-0.075z"></path>
     </svg>
@@ -105,12 +106,12 @@ const Javascript = ({
 const Scss = ({
   width, height, iconTitle, fill
 }) => {
-  // Scss.propTypes = {
-  //   width: PropTypes.string,
-  //   height: PropTypes.string,
-  //   iconTitle: PropTypes.string,
-  //   fill: PropTypes.string
-  // };
+  Scss.propTypes = {
+    width: PropTypes.string,
+    height: PropTypes.string,
+    iconTitle: PropTypes.string,
+    fill: PropTypes.string
+  };
 
   return (
     <svg className="icon icon-javascript" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>

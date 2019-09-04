@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';  // { BrowserRouter as Router }
 import './index.css';
 import './styles/main.css';
 // Import root app
@@ -10,7 +11,9 @@ const MOUNT_NODE = document.getElementById('root');
 
 const render = () => {
     ReactDOM.render(
-        <App />, 
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>, 
         MOUNT_NODE
     );
 };

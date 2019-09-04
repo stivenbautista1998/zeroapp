@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Heart = ({
   width, height, iconTitle, fill
 }) => {
-//   Heart.propTypes = {
-//     width: PropTypes.string,
-//     height: PropTypes.string,
-//     iconTitle: PropTypes.string,
-//     fill: PropTypes.string
-//   };
+  Heart.propTypes = {
+    width: PropTypes.string,
+    height: PropTypes.string,
+    iconTitle: PropTypes.string,
+    fill: PropTypes.string
+  };
 
   return (
     <svg className="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32" aria-labelledby={iconTitle}>
@@ -19,9 +19,9 @@ const Heart = ({
 };
 
 export default class HeartOption extends Component {
-//   static propTypes = {
-//     onClick: PropTypes.func
-//   }
+  static propTypes = {
+    onClick: PropTypes.func
+  }
 
   constructor(props) {
     super(props);

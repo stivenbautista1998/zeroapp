@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Search from './Search';
 import ListItems from './ListItems';
 import img from '../../images/logo.svg';
@@ -15,9 +15,9 @@ const myList = {
 };
 
 function Icon({ logo }) {
-//   Icon.propTypes = {
-//     logo: PropTypes.string
-//   };
+  Icon.propTypes = {
+    logo: PropTypes.string
+  };
   return (
     <img src={logo} className="icon-logo" alt="my logo from page" />
   );

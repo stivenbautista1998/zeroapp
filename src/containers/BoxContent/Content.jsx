@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import HeartOption from './HeartOption';
 import SeeOption from './SeeOption';
 
@@ -15,13 +15,13 @@ const styles = {
 function Content({
   mytitle, text, img, onClickHeart, onClickSee
 }) {
-//   Content.propTypes = {
-//     mytitle: PropTypes.string,
-//     text: PropTypes.string,
-//     img: PropTypes.element,
-//     onClickHeart: PropTypes.func,
-//     onClickSee: PropTypes.func
-//   };
+  Content.propTypes = {
+    mytitle: PropTypes.string,
+    text: PropTypes.string,
+    img: PropTypes.element,
+    onClickHeart: PropTypes.func,
+    onClickSee: PropTypes.func
+  };
 
   const myStyle = [
     {

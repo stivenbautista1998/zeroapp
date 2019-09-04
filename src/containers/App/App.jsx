@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 // import { Helmet } from 'react-helmet';
-// import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 // import Features from '../Features';
 // import Support from '../Support';
@@ -22,13 +22,13 @@ const App = () => (
     <div className="app">
       <div className="app-content">
         <Header />
-        <BoxContent />
-        {/* <Switch>
+        
+        <Switch>
           <Route exact path="/" component={BoxContent} />
-          <Route path="/features" component={Features} />
+          {/* <Route path="/features" component={Features} />
           <Route path="/support" component={Support} />
-          <Route path="" component={NotFoundPage} />
-        </Switch> */}
+          <Route path="" component={NotFoundPage} /> */}
+        </Switch>
       </div>
 
       <Footer />
