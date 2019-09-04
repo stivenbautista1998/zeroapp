@@ -1,7 +1,21 @@
 {
-  "name": "ceroapp",
+  "name": "zeroapp",
   "version": "0.1.0",
   "private": true,
+  "description": "Project to consolidate the most advanced knowledge of react",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stivenbautista1998/zeroapp.git"
+  },
+  "author": {
+    "name": "Stiven Bautista",
+    "url": "https://stivenbautista.com"
+  },
+  "license": "APACHE 2.0",
+  "bugs": {
+    "url": "https://github.com/stivenbautista1998/zeroapp/issues"
+  },
+  "homepage": "https://github.com/stivenbautista1998/zeroapp#readme",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
