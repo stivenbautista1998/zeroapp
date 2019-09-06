@@ -9,12 +9,12 @@ import * as serviceWorker from './serviceWorker';
 const MOUNT_NODE = document.getElementById('root');
 
 const render = () => {
-    ReactDOM.render(
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>, 
-        MOUNT_NODE
-    );
+  ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>, 
+    MOUNT_NODE
+  );
 };
 
 render();

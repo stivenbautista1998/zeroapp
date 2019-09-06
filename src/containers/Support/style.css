@@ -1,0 +1,40 @@
+.section-support {
+  border: 1px solid;
+}
+
+.section-support__title {
+  font-size: 4em;
+  text-align: center;
+  margin: .5em 0;
+}
+
+.section-support__item {
+  font-size: 1rem;
+  margin: 1em 0;
+  width: 33.3%;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: .05em;
+}
+
+.section-support__item-image {
+  border: 1px solid skyblue;
+  padding: 1em;
+}
+
+.section-support__item-content {
+  border: 1px solid skyblue;
+  padding: 1em;
+}
+
+.section-support__item-title {
+  border: 1px solid skyblue;
+  margin-top: 0;
+}
+
+.section-support__item-text {
+  border: 1px solid skyblue;
+  padding: 1em;
+  text-align: left;
+}

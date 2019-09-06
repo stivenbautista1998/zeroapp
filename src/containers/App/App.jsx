@@ -1,23 +1,23 @@
 import React, { Fragment } from 'react';
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 
-// import Features from '../Features';
-// import Support from '../Support';
-import BoxContent from '../BoxContent';
-// import NotFoundPage from '../NotFoundPage/Loadable';
+import Features from '../Features';
+import Support from '../Support';
+import BoxContent from '../BoxContent/Loadable'; /* problem with Loadable in future versions */
+import NotFoundPage from '../NotFoundPage';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import './style.css';
 
 const App = () => (
   <Fragment>
-    {/* <Helmet
+    <Helmet
       titleTemplate="React Boilerplate"
       defaultTitle="ReactJS Boilerplate App"
     >
       <meta name="description" content="A Home of boilerplate react" />
-    </Helmet> */}
+    </Helmet>
 
     <div className="app">
       <div className="app-content">
@@ -25,9 +25,9 @@ const App = () => (
         
         <Switch>
           <Route exact path="/" component={BoxContent} />
-          {/* <Route path="/features" component={Features} />
+          <Route path="/features" component={Features} />
           <Route path="/support" component={Support} />
-          <Route path="" component={NotFoundPage} /> */}
+          <Route path="" component={NotFoundPage} />
         </Switch>
       </div>
 
