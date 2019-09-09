@@ -81,7 +81,7 @@
 }
 
 .section-nav__container {
-  display: flex;
+  display: inline-block;
   width: 100%;
   align-items: center;
   background: #20232a;
@@ -90,6 +90,8 @@
 .section-nav__box-search {
   position: relative;
   height: 84%;
+  padding: .5em;
+  margin: auto;
   transition: .3s;
 }
 
@@ -113,6 +115,14 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .section-nav__container {
+    display: flex;
+  }
+
+  .section-nav__box-search {
+    padding: 0;
+  }
+
   .section-nav {
     display: flex;
     justify-content: space-between;

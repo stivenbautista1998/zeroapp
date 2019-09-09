@@ -1,16 +1,17 @@
 .footer {
+  font-size: 1rem;
   text-align: center;
   background: #20232a;
   margin-top: 1em;
-  padding: 3em;
+  padding: 1em;
   width: 100%;
   align-self: flex-end;
 }
 
 .footer__content {
   color: #FFF;
-  font-size: 1.5em;
   margin: .5em 0;
+  text-transform: capitalize;
 }
 
 .list-social {
@@ -20,5 +21,15 @@
 
 .list-social__item {
   display: inline-block;
-  margin: 1em 2em;
+  margin: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 3em;
+  }
+
+  .list-social__item {
+    margin: 1em 2em;
+  }
 }

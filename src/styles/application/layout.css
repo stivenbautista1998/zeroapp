@@ -1,5 +1,6 @@
 .wrapper {
   margin: 0 auto;
+  padding: 0 .5em;
 }
 
 .section {
@@ -15,10 +16,6 @@
 
 @media only screen and (min-width: 1024px) {
   .wrapper {
-    width: 80%;
-  }
-
-  .large--one-third {
-    width:33.333%;
+    max-width: 1024px;
   }
 }

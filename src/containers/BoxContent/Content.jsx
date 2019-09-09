@@ -33,25 +33,23 @@ function Content({
     }
   ];
   return (
-    <div className="grid__item one-whole large--one-third medium--one-half">
-      <div className="content-box">
-        <div style={myStyle[0]}>
-          <div className="content-box__header" style={myStyle[1]}>
-            <div className="content-box__image">
-              {img}
-            </div>
-            <h2 className="content-box__title">
-              {mytitle}
-            </h2>
+    <div className="grid__item content-box">
+      <div style={myStyle[0]}>
+        <div className="content-box__header" style={myStyle[1]}>
+          <div className="content-box__image">
+            {img}
           </div>
-          <div className="content-box__body">
-            <div className="content-box__button">
-              <HeartOption onClick={onClickHeart} />
-              <SeeOption onClick={onClickSee} />
-            </div>
+          <h2 className="content-box__title">
+            {mytitle}
+          </h2>
+        </div>
+        <div className="content-box__body">
+          <div className="content-box__button">
+            <HeartOption onClick={onClickHeart} />
+            <SeeOption onClick={onClickSee} />
+          </div>
 
-            {text}
-          </div>
+          {text}
         </div>
       </div>
     </div>

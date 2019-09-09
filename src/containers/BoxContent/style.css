@@ -1,7 +1,7 @@
 @import '../../styles/application/variables.css';
 
 .section-tech {
-  margin: 3em 0;
+  margin: 1em 0;
 }
 
 .section-tech__content {
@@ -16,49 +16,31 @@
   width: 50%;
 }
 
-@media only screen and (min-width: 480px) {
-  .section-tech__content {
-    height: 36px;
-  }
-}
-
 .section-tech__title {
   font-size: 1rem;
   box-shadow: 0px 0px 21px 1px #CABEBE;
   border-radius: 5px;
   padding: .5em;
-  margin: .4em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media only screen and (min-width: 1024px) {
-  .section-tech__title {
-    font-size: 1.5rem;
-    margin: 1em 0;
-    width: 50%;
-  }
 }
 
 .content-box {
   border-radius: 5px;
   box-shadow: 0px 0px 21px 1px rgba(100,147,191,0.66);
   padding: 1em;
-  margin: 1em;
   transition: .4s;
 }
 
-@media only screen and (min-width: 768px) {
-  .content-box {
-    margin: 0 0 2em 0;
-  }    
+.content-box:hover {
+  transform: scale(1.03);
 }
 
-@media only screen and (min-width: 1024px) {
-  .content-box {
-    margin: 0 0 2em 0;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1em;
 }
 
 .content-box__header {
@@ -85,13 +67,6 @@
   margin-right: auto;
 }
 
-@media only screen and (min-width: 1024px) {
-  .content-box__image {
-    padding: 1.5em 0;
-    top: 45%;
-  }
-}
-
 .content-box__title {
   margin-top: 0;
 }
@@ -100,10 +75,6 @@
   padding: 6em 2em 2em 2em;
   font-size: .8rem;
   position: relative;
-}
-
-.content-box:hover {
-  transform: scale(1.03);
 }
 
 .content-box__button {
@@ -124,4 +95,37 @@
 
 .botton-box:focus {
   outline: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .section-tech__content {
+    height: 36px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-tech {
+    margin: 3em 0;
+  }
+
+  .section-tech__title {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    width: 50%;
+  }
+
+  .content-box__image {
+    padding: 1.5em 0;
+    top: 45%;
+  }
 }
